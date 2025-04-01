@@ -1,3 +1,5 @@
+let humanScore, computerScore = 0;
+
 
 function getComputerChoice(){
     let computerChoice = Math.random(); 
