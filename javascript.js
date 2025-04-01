@@ -1,7 +1,7 @@
 
 function getComputerChoice(){
-    let choice = Math.random(); 
-    if(choice <=0.33){
+    let computerChoice = Math.random(); 
+    if(computerChoice <=0.33){
         return "scissor"
     }
     else if(0.33<choice<=0.66){
@@ -10,4 +10,8 @@ function getComputerChoice(){
     else{
         return "rock"
     }
+}
+
+function getHumanChoice(){
+    return prompt("Chose rock paper or scissor")
 }
