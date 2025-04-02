@@ -59,13 +59,25 @@ function playRound(humanChoice){
         if(humanScore == 5){
             alert("Human won!");
             humanScore = 0;
-            computerScore = 0;     
+            computerScore = 0;
         }
         if(computerScore == 5){
             alert("cpComputer won!");
             humanScore = 0;
-            computerScore = 0; 
+            computerScore = 0;
         }
+    updateScore()
+}
+
+function updateScore(){
+    scores.forEach(score =>{
+        if(score.id == "human"){
+            score.textContent = humanScore;
+        }
+        if(score.id == "computer"){
+            score.textContent = computerScore;
+        }
+    })
 }
 
 
