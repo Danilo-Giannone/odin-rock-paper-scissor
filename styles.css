@@ -1,3 +1,24 @@
 *{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.scores,
+.buttonContainer{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 10vw 5vw 5vw;
+}
+.scoreContainer,
+.vs{
+    flex: 1;
+}
+.text{
+    font-size: 30px;
+}
+button{
+    height: 20vw;
+    width: 20vw;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 20px;
+}
