@@ -62,7 +62,7 @@ function playRound(humanChoice){
             computerScore = 0;
         }
         if(computerScore == 5){
-            alert("cpComputer won!");
+            alert("Computer won!");
             humanScore = 0;
             computerScore = 0;
         }
