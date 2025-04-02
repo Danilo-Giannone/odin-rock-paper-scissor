@@ -1,5 +1,9 @@
 const scores = document.querySelectorAll(".score");
 const buttons = document.querySelectorAll("button");
+let humanScore = 0
+let computerScore = 0;
+
+
 buttons.forEach(button => {
     button.addEventListener("click",() =>{
         playRound(button.id)
@@ -52,11 +56,19 @@ function playRound(humanChoice){
             console.log("Draw");
         }
     }
+        if(humanScore == 5){
+            alert("Human won!");
+            humanScore = 0;
+            computerScore = 0;     
+        }
+        if(computerScore == 5){
+            alert("cpComputer won!");
+            humanScore = 0;
+            computerScore = 0; 
+        }
 }
 
-function playGame(){
-    let humanScore = 0
-    let computerScore = 0;
+
     
-}
+
 
