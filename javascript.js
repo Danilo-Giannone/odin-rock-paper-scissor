@@ -1,4 +1,11 @@
-playGame();
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+    button.addEventListener("click",() =>{
+        playRound(button.id)
+
+    })
+})
+
 function getComputerChoice(){
     let computerChoice = Math.random(); 
     if(computerChoice <=0.3){
@@ -10,12 +17,7 @@ function getComputerChoice(){
     }
 }
 
-function getHumanChoice(){
-    return prompt("Chose rock paper or scissor").toLowerCase();
-}
-
-function playRound(){
-    const humanChoice = getHumanChoice()
+function playRound(humanChoice){
     const computerChoice = getComputerChoice();
 
     if (computerChoice == "rock"){
